@@ -1,7 +1,8 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Sidebar from './Sidebar/Sidebar';
+import Cards from './Cards/Cards';
 
 import './App.scss';
 
@@ -10,8 +11,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="index">
-        <Header />
-        <Footer />
+        <Sidebar />
+        <Router>
+          <Cards />
+        </Router>
       </div>
     );
   }

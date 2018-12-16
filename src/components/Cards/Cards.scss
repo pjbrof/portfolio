@@ -1,0 +1,42 @@
+.cards {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  padding: 60px;
+  height: 100%;
+  width: 75%;
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+
+  .card {
+    width: 400px;
+    height: 400px;
+    margin: 15px auto;
+    padding: 30px;
+    border: 1px solid #ededed;
+    background-repeat: no-repeat;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      img {
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    width: 100%;
+    position: static;
+  }
+}
