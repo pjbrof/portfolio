@@ -1,6 +1,6 @@
-# Template
+# Portfolio
 
-A template for quickly setting up MERN apps with Webpack, Redux, and Jest.
+My personal portfolio
 
 ## Local Installation
 
@@ -23,9 +23,3 @@ If using VSCode install the Prettier and EditorConfig plugins and set the follow
 ## Testing
 
 `npm test`
-
-### Todo
-
-Redux Setup
-
-Node/Mongo

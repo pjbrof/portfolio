@@ -1,18 +1,50 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import './Filter.scss';
 import reactLogo from '../../img/react.svg';
-import d3Logo from '../../img/d3.svg';
+
+import { setFilter } from '../../actions/dataActions';
 
 // eslint-disable-next-line react/prefer-stateless-function
-export default class Filter extends React.Component {
+class Filter extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleFilter = this.handleFilter.bind(this);
+  }
+
+  handleFilter(e) {
+    e.preventDefault();
+    this.props.setFilter(e.currentTarget.alt);
+  }
+
   render() {
+    const { filters } = this.props;
     return (
       <div className="filter">
         <h3>Filter:</h3>
-        <img src={reactLogo} alt="React" />
-        <img src={d3Logo} alt="d3js" />
+        {filters.map((value, index) => (
+          <img
+            key={index}
+            src={reactLogo}
+            className="filter-item"
+            alt={value}
+            onClick={this.handleFilter}
+          />
+        ))}
       </div>
     );
   }
 }
+
+const mapStateToProps = store => store.data;
+
+const mapActionsToProps = {
+  setFilter
+};
+
+export default connect(
+  mapStateToProps,
+  mapActionsToProps
+)(Filter);

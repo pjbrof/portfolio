@@ -1,0 +1,10 @@
+.filter-item {
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+}
