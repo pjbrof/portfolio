@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import './Filter.scss';
-import reactLogo from '../../img/react.svg';
 
 import { setFilter } from '../../actions/dataActions';
 
@@ -25,13 +24,9 @@ class Filter extends React.Component {
       <div className="filter">
         <h3>Filter:</h3>
         {filters.map((value, index) => (
-          <img
-            key={index}
-            src={reactLogo}
-            className="filter-item"
-            alt={value}
-            onClick={this.handleFilter}
-          />
+          <a href="#" key={index}>
+            <img src="" className="filter-item" alt={value} onClick={this.handleFilter} />
+          </a>
         ))}
       </div>
     );

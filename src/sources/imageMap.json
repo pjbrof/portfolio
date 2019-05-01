@@ -1,0 +1,16 @@
+{
+  "imagemap": [
+    {
+      "name": "React",
+      "src": "/img/react.svg"
+    },
+    {
+      "name": "d3",
+      "src": "/img/d3.svg"
+    },
+    {
+      "name": "JavaScript",
+      "src": "/img/javascript.svg"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ class Cards extends React.Component {
   }
 
   render() {
-    const cards = this.props.cards
+    const cards = this.props.cards.cards
       .filter(value => {
         if (this.props.activeFilter !== 'All') {
           return value.tech.includes(this.props.activeFilter);
