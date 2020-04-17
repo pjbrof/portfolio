@@ -1,0 +1,14 @@
+.details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  padding: 60px;
+  height: 100%;
+  width: 75%;
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+}

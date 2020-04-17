@@ -1,9 +1,41 @@
 import cardData from '../sources/cardData.json';
 
+import html5Img from '../img/html-5.svg';
+import reactImg from '../img/react.svg';
+import javascriptImg from '../img/javascript.svg';
+import sassImg from '../img/sass.svg';
+import nodeImg from '../img/nodejs-icon.svg';
+import mysqlImg from '../img/mysql.svg';
+
 export default function reducer(
   state = {
     cards: cardData,
-    filters: ['All', 'React', 'JavaScript', 'Sass', 'Node', 'MySQL'],
+    filters: [
+      {
+        name: 'All',
+        img: html5Img
+      },
+      {
+        name: 'React',
+        img: reactImg
+      },
+      {
+        name: 'JavaScript',
+        img: javascriptImg
+      },
+      {
+        name: 'Sass',
+        img: sassImg
+      },
+      {
+        name: 'Node',
+        img: nodeImg
+      },
+      {
+        name: 'MySQL',
+        img: mysqlImg
+      }
+    ],
     activeFilter: 'All',
     error: null
   },

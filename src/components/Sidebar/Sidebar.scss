@@ -1,19 +1,10 @@
 .sidebar {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 60px;
-  z-index: 1;
-  height: 100%;
-  width: 25%;
+  padding: 30px;
   border-right: 1px solid #efefef;
   background-color: #fff;
 
-  .circle {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+  .logo {
+    border-radius: 10px;
     background-color: #333;
     color: #fff;
     font-weight: bold;
@@ -22,10 +13,26 @@
     line-height: 300px;
   }
 
+  .name {
+    font-size: 1.5rem;
+  }
+
   h1 {
     font-family: 'MonserratBold';
     text-transform: uppercase;
     font-size: 2rem;
+  }
+
+  .resumes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   button {
@@ -51,11 +58,8 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-    bottom: auto;
+    width: 25%;
   }
 }

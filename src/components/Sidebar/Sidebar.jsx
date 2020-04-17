@@ -25,28 +25,32 @@ export default class Sidebar extends React.Component {
 
   render() {
     return (
-      <div className="sidebar shadow">
-        <div className="circle">P</div>
+      <div className="sidebar shadow clear">
+        <div className="logo">P</div>
         <h1 className="name">Patrick Brophy</h1>
         <p className="title">Senior Front-End Engineer for John Hancock</p>
         <h3>Resume:</h3>
-        <button type="submit" onClick={this.handlePDF}>
-          PDF
-        </button>
-        <button type="submit" onClick={this.handleWord}>
-          Word
-        </button>
+        <div className="resumes">
+          <button type="submit" onClick={this.handlePDF}>
+            PDF
+          </button>
+          <button type="submit" onClick={this.handleWord}>
+            Word
+          </button>
+        </div>
         <br />
         <h3>Contact:</h3>
-        <a href="https://twitter.com/pjbrof">
-          <img src={Twitter} alt="Twitter" />
-        </a>
-        <a href="https://github.com/pjbrof">
-          <img src={Github} alt="Github" />
-        </a>
-        <a href="https://codepen.io/pjbrof/">
-          <img src={Codepen} alt="Codepen" />
-        </a>
+        <div className="contact">
+          <a href="https://twitter.com/pjbrof">
+            <img src={Twitter} alt="Twitter" />
+          </a>
+          <a href="https://github.com/pjbrof">
+            <img src={Github} alt="Github" />
+          </a>
+          <a href="https://codepen.io/pjbrof/">
+            <img src={Codepen} alt="Codepen" />
+          </a>
+        </div>
         <Filter />
       </div>
     );

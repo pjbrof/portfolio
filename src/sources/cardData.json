@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "title": "Heard the Sheep",
+      "title": "Herd the Sheep",
       "gif": "https://placekitten.com/400/400",
       "tech": ["JavaScript", "D3"],
       "keywords": ["viz"]

@@ -19,16 +19,23 @@ class Filter extends React.Component {
   }
 
   render() {
-    const { filters } = this.props;
+    const { filters, activeFilter } = this.props;
     return (
-      <div className="filter">
+      <React.Fragment>
         <h3>Filter:</h3>
-        {filters.map((value, index) => (
-          <a href="#" key={index}>
-            <img src="" className="filter-item" alt={value} onClick={this.handleFilter} />
-          </a>
-        ))}
-      </div>
+        <div className="filter">
+          {filters.map((value, index) => (
+            <a href="#" key={index}>
+              <img
+                src={value.img}
+                className="filter-item"
+                alt={value.name}
+                onClick={this.handleFilter}
+              />
+            </a>
+          ))}
+        </div>
+      </React.Fragment>
     );
   }
 }

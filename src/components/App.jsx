@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Sidebar from './Sidebar/Sidebar';
 import Cards from './Cards/Cards';
+import Details from './Details/Details';
 
 import './App.scss';
 
@@ -13,7 +14,12 @@ export default class App extends React.Component {
       <div className="index">
         <Sidebar />
         <Router>
-          <Cards />
+          <div>
+            <Switch>
+              <Route exact path="/" component={Cards} />
+              <Route path="/g/:id" component={Details} />
+            </Switch>
+          </div>
         </Router>
       </div>
     );

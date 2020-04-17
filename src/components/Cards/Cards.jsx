@@ -21,7 +21,7 @@ class Cards extends React.Component {
       })
       .map((value, index) => {
         return (
-          <Link to={`/g/${index}`} key={index}>
+          <Link to={`/g/${value.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
             <div className="card" style={{ backgroundImage: `url(${value.gif})` }}>
               <h2>{value.title}</h2>
               <ul>
