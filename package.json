@@ -1,7 +1,11 @@
 {
-  "version": "1.0.0",
-  "description": "React Redux Webpack Template",
-  "main": "",
+  "version": "0.1.0",
+  "description": "Patrick Brophy Portfolio",
+  "main": "index.js",
+  "engines": {
+    "node": "10.7.0",
+    "npm": "6.13.4"
+  },
   "scripts": {
     "build": "webpack",
     "start": "node index.js",
