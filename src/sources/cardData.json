@@ -2,74 +2,84 @@
   "cards": [
     {
       "title": "Herd the Sheep",
-      "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript", "D3"],
+      "gif": "./img/hts.png",
+      "tech": ["javascript", "d3js"],
       "keywords": ["viz"]
     },
     {
       "title": "RunBold Banner App",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript", "PHP", "OAuth"],
+      "tech": ["javascript", "php"],
       "keywords": ["app"]
     },
     {
       "title": "JJill Site Redesign",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript", "DotNet"],
+      "link": "https://www.jjill.com/",
+      "tech": ["javascript", "dotnet"],
       "keywords": ["redesign"]
     },
     {
       "title": "John Hancock Site Redesign",
-      "gif": "https://placekitten.com/400/400",
-      "tech": ["React", "JavaScript", "AEM", "Sass", "Java"],
+      "gif": "./img/jhcom.png",
+      "link": "https://www.johnhancock.com",
+      "tech": ["react", "javascript", "sass"],
       "keywords": ["redesign"]
     },
     {
       "title": "Musicroamer",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["React", "JavaScript", "Sass", "Node", "MySQL"],
+      "link": "http://www.musicroamer.com",
+      "tech": ["react", "javascript", "sass", "nodejs-icon", "mysql"],
       "keywords": ["app"]
     },
     {
       "title": "Automobile Manufactorers",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript", "D3"],
+      "tech": ["javascript", "d3js"],
       "keywords": ["viz"]
     },
     {
       "title": "Dendrofile",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript", "Node"],
+      "tech": ["javascript", "nodejs-icon"],
       "keywords": ["viz"]
     },
     {
-      "title": "Boston Data",
-      "gif": "https://placekitten.com/400/400",
-      "tech": ["R", "Python", "JavaScript"],
+      "title": "Analyze Boston",
+      "gif": "./img/beantown_solar.png",
+      "brief": {
+        "title": "Beantown Solar",
+        "body": "Lorem ipsum",
+        "image": "./img/beantown_solar.png"
+      },
+      "link": "https://tcb-analytics.shinyapps.io/bostonsolar/",
+      "tech": ["r-lang", "python", "javascript"],
       "keywords": ["viz"]
     },
     {
       "title": "Scotch Malt Map",
-      "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript"],
+      "gif": "./img/malt_map.png",
+      "link": "https://scotchgit.bitbucket.io/",
+      "tech": ["javascript"],
       "keywords": ["viz"]
     },
     {
       "title": "2016 Boston Marathon Ad Campaigns",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript"],
+      "tech": ["javascript"],
       "keywords": ["html5ads"]
     },
     {
       "title": "2017 Boston Marathon Ad Campaigns",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript"],
+      "tech": ["javascript"],
       "keywords": ["html5ads"]
     },
     {
       "title": "Twine Ads",
       "gif": "https://placekitten.com/400/400",
-      "tech": ["JavaScript"],
+      "tech": ["javascript"],
       "keywords": ["html5ads"]
     }
   ]

@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import './Cards.scss';
-import d3Logo from '../../img/d3.svg';
+
+import { d3js, javascript } from '../../img';
 
 class Cards extends React.Component {
   constructor(props) {
@@ -21,14 +22,17 @@ class Cards extends React.Component {
       })
       .map((value, index) => {
         return (
-          <Link to={`/g/${value.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
-            <div className="card" style={{ backgroundImage: `url(${value.gif})` }}>
-              <h2>{value.title}</h2>
-              <ul>
-                <li>
-                  <img src={d3Logo} alt="d3js" />
-                </li>
-              </ul>
+          <Link to={`/${value.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
+            <div className="card">
+              <img className="img-responsive" src={value.gif} alt="" />
+              <div className="card-info">
+                <h3>{value.title}</h3>
+                <ul>
+                  <li>
+                    <img src="" alt="" />
+                  </li>
+                </ul>
+              </div>
             </div>
           </Link>
         );
@@ -41,7 +45,4 @@ const mapStateToProps = store => store.data;
 
 const mapActionsToProps = {};
 
-export default connect(
-  mapStateToProps,
-  mapActionsToProps
-)(Cards);
+export default connect(mapStateToProps, mapActionsToProps)(Cards);

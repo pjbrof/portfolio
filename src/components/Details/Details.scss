@@ -7,8 +7,13 @@
   height: 100%;
   width: 75%;
   background-color: #fafafa;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   overflow-y: scroll;
+
+  .button {
+    align-items: flex-start;
+  }
+
+  h1 {
+    text-align: center;
+  }
 }

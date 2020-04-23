@@ -26,9 +26,11 @@ class Details extends React.Component {
     return (
       <div className="details">
         <Link to="/">
-          <button>Back</button>
+          <button className="button">
+            <span className="arrow">&#8592;</span> Back
+          </button>
         </Link>
-        {this.state.title}
+        <h1>{this.state.title}</h1>
       </div>
     );
   }

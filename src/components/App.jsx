@@ -17,7 +17,7 @@ export default class App extends React.Component {
           <div>
             <Switch>
               <Route exact path="/" component={Cards} />
-              <Route path="/g/:id" component={Details} />
+              <Route path="/:id" component={Details} />
             </Switch>
           </div>
         </Router>

@@ -31,10 +31,10 @@ export default class Sidebar extends React.Component {
         <p className="title">Senior Front-End Engineer for John Hancock</p>
         <h3>Resume:</h3>
         <div className="resumes">
-          <button type="submit" onClick={this.handlePDF}>
+          <button className="button" type="submit" onClick={this.handlePDF}>
             PDF
           </button>
-          <button type="submit" onClick={this.handleWord}>
+          <button className="button" type="submit" onClick={this.handleWord}>
             Word
           </button>
         </div>
