@@ -2,7 +2,7 @@ import React from 'react';
 import Filter from '../Filter/Filter';
 
 import './Sidebar.scss';
-import Twitter from '../../img/Twitter.svg';
+import Twitter from '../../img/twitter.svg';
 import Github from '../../img/github-octocat.svg';
 import Codepen from '../../img/codepen-icon.svg';
 
