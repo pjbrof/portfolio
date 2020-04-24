@@ -8,13 +8,13 @@
     },
     {
       "title": "RunBold Banner App",
-      "gif": "https://placekitten.com/400/400",
+      "gif": "./img/runbold-title.png",
       "tech": ["javascript", "php"],
       "keywords": ["app"]
     },
     {
       "title": "JJill Site Redesign",
-      "gif": "https://placekitten.com/400/400",
+      "gif": "./img/jjill_home.png",
       "link": "https://www.jjill.com/",
       "tech": ["javascript", "dotnet"],
       "keywords": ["redesign"]
@@ -28,7 +28,7 @@
     },
     {
       "title": "Musicroamer",
-      "gif": "https://placekitten.com/400/400",
+      "gif": "./img/musicroamer.png",
       "link": "http://www.musicroamer.com",
       "tech": ["react", "javascript", "sass", "nodejs-icon", "mysql"],
       "keywords": ["app"]

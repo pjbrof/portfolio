@@ -16,11 +16,11 @@ export default class Sidebar extends React.Component {
   }
 
   handlePDF() {
-    window.location = './PatrickBrophy_Resume.pdf';
+    window.location = './resumes/PatrickBrophy_Resume.pdf';
   }
 
   handleWord() {
-    window.location = './PatrickBrophy_Resume.docx  ';
+    window.location = './resumes/PatrickBrophy_Resume.docx  ';
   }
 
   render() {

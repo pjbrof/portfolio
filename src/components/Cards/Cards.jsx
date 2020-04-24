@@ -28,9 +28,13 @@ class Cards extends React.Component {
               <div className="card-info">
                 <h3>{value.title}</h3>
                 <ul>
-                  <li>
-                    <img src="" alt="" />
-                  </li>
+                  {value.tech.map(logo => {
+                    return (
+                      <li>
+                        <img src={`./img/${logo}.svg`} alt={logo} />
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
