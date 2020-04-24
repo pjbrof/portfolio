@@ -9,33 +9,32 @@ import { setFilter } from '../../actions/dataActions';
 class Filter extends React.Component {
   constructor(props) {
     super(props);
-
-    this.handleFilter = this.handleFilter.bind(this);
   }
 
   handleFilter(e) {
     e.preventDefault();
-    this.props.setFilter(e.currentTarget.alt);
+    this.props.setFilter(e.currentTarget.getAttribute('data-filter'));
   }
 
   render() {
     const { filters, activeFilter } = this.props;
     return (
-      <React.Fragment>
+      <div className="filter">
         <h3>Filter:</h3>
-        <div className="filter">
+        <div className="filter-items">
           {filters.map((value, index) => (
             <a href="#" key={index}>
               <img
                 src={value.img}
                 className="filter-item"
-                alt={value.name}
-                onClick={this.handleFilter}
+                data-filter={value.name}
+                alt={`filter by ${value.name}`}
+                onClick={this.handleFilter.bind(this)}
               />
             </a>
           ))}
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
@@ -46,7 +45,4 @@ const mapActionsToProps = {
   setFilter
 };
 
-export default connect(
-  mapStateToProps,
-  mapActionsToProps
-)(Filter);
+export default connect(mapStateToProps, mapActionsToProps)(Filter);

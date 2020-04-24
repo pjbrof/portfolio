@@ -38,18 +38,19 @@ export default class Sidebar extends React.Component {
             Word
           </button>
         </div>
-        <br />
-        <h3>Contact:</h3>
         <div className="contact">
-          <a href="https://twitter.com/pjbrof">
-            <img src={Twitter} alt="Twitter" />
-          </a>
-          <a href="https://github.com/pjbrof">
-            <img src={Github} alt="Github" />
-          </a>
-          <a href="https://codepen.io/pjbrof/">
-            <img src={Codepen} alt="Codepen" />
-          </a>
+          <h3>Contact:</h3>
+          <div className="contact-links">
+            <a href="https://twitter.com/pjbrof" target="_blank" rel="noopener noreferrer">
+              <img src={Twitter} alt="Twitter for pjbrof" />
+            </a>
+            <a href="https://github.com/pjbrof" target="_blank" rel="noopener noreferrer">
+              <img src={Github} alt="Github Profile" />
+            </a>
+            <a href="https://codepen.io/pjbrof/" target="_blank" rel="noopener noreferrer">
+              <img src={Codepen} alt="Codepen Profile" />
+            </a>
+          </div>
         </div>
         <Filter />
       </div>

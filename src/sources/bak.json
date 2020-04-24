@@ -1,0 +1,12 @@
+{
+  "title": "Automobile Manufactorers",
+  "gif": "https://placekitten.com/400/400",
+  "tech": ["javascript", "d3js"],
+  "keywords": ["viz"]
+},
+{
+  "title": "Dendrofile",
+  "gif": "https://placekitten.com/400/400",
+  "tech": ["javascript", "nodejs-icon"],
+  "keywords": ["viz"]
+},

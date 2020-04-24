@@ -30,20 +30,8 @@
       "title": "Musicroamer",
       "gif": "./img/musicroamer.png",
       "link": "http://www.musicroamer.com",
-      "tech": ["react", "javascript", "sass", "nodejs-icon", "mysql"],
+      "tech": ["react", "javascript", "sass", "nodejs-icon", "d3js"],
       "keywords": ["app"]
-    },
-    {
-      "title": "Automobile Manufactorers",
-      "gif": "https://placekitten.com/400/400",
-      "tech": ["javascript", "d3js"],
-      "keywords": ["viz"]
-    },
-    {
-      "title": "Dendrofile",
-      "gif": "https://placekitten.com/400/400",
-      "tech": ["javascript", "nodejs-icon"],
-      "keywords": ["viz"]
     },
     {
       "title": "Analyze Boston",

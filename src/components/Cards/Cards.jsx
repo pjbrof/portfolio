@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 import './Cards.scss';
 
-import { d3js, javascript } from '../../img';
-
 class Cards extends React.Component {
   constructor(props) {
     super(props);
@@ -27,15 +25,6 @@ class Cards extends React.Component {
               <img className="img-responsive" src={value.gif} alt="" />
               <div className="card-info">
                 <h3>{value.title}</h3>
-                <ul>
-                  {value.tech.map(logo => {
-                    return (
-                      <li>
-                        <img src={`./img/${logo}.svg`} alt={logo} />
-                      </li>
-                    );
-                  })}
-                </ul>
               </div>
             </div>
           </Link>

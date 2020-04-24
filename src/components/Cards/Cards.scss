@@ -19,6 +19,10 @@
     margin: 15px auto;
     border: 1px solid #ededed;
 
+    img {
+      object-fit: cover;
+    }
+
     .card-info {
       position: absolute;
       bottom: 0;
@@ -39,6 +43,7 @@
           padding: 0 20px 0 0;
           img {
             height: 45px;
+            filter: grayscale(1);
           }
         }
       }
