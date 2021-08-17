@@ -1,0 +1,17 @@
+[
+  {
+    "company": "John Hancock",
+    "positions": [
+      {
+        "title": "Senior Front-End Engineer",
+        "dates": "Jan 2019 - Feb 2021",
+        "bullets": ["Worked on this that and the other thing", "Did this as well"]
+      },
+      {
+        "title": "Intermediate Front-End Engineer",
+        "dates": "October 2016 - Dec 2018",
+        "bullets": ["Worked on this that and the other thing", "Did this as well"]
+      }
+    ]
+  }
+]

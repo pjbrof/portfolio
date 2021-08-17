@@ -20,12 +20,6 @@ module.exports = {
   },
   module: {
     rules: [
-      /* {
-        enforce: 'pre',
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader'
-      }, */
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -37,7 +31,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|woff|woff2)$/,
-        loader: 'url-loader?limit=8192'
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       },
       {
         test: /\.(mp4|ogg|svg)$/,

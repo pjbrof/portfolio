@@ -9,7 +9,6 @@ import store from './store';
 const app = document.getElementById('app');
 
 ReactDOM.render(
-  // eslint-disable-next-line react/jsx-filename-extension
   <Provider store={store}>
     <App />
   </Provider>,
