@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="main.css" />
     <!-- <script src="index.js" async defer></script>
     -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -33,25 +35,19 @@
     <!-- End Google Tag Manager (noscript) -->
     <header>
       <h1 class="name">Patrick Brophy <span style="display: none">Resume</span></h1>
+      <h2 style="color: #aaa; font-style: italic;">Front-End Engineer</h2>
     </header>
     <main>
-      <section class="contact">
-        <h2>Contact</h2>
-        <span>Email: <a href="mailto:pjbrof@gmail.com">pjbrof@gmail.com</a></span>
-        <span>Phone: <a href="tel:14015698623">+1(401)-569-8623</a></span>
-        <span>Twitter: <a href="https://twitter.com/pjbrof">@pjbrof</a></span>
-        <span>Linkedin: <a href="https://linkedin.com/in/pjbrof">Linkedin</a></span>
-      </section>
       <section class="experience">
         <h2>Professional Experience</h2>
         <h3>John Hancock</h3>
-        <ul>
+        <ul class="positions">
           <li>
             <h4>Senior Front-End Engineer</h4>
             <ul>
               <li>
                 Served as front-end lead for the fully responsive redesign of John Hancock's
-                corporate website, johnhancock.com in Adobe AEM content management system on an
+                corporate website, <a href="https://johnhancock.com" target="_blank" rel="noopener noreferrer">johnhancock.com</a> in Adobe AEM content management system on an
                 Agile team with offshore resources.
               </li>
             </ul>
@@ -69,7 +65,7 @@
               </li>
             </ul>
           </li>
-          <li><h4>Systems Designer</h4></li>
+          <li><h4>Systems Designer</h4>
           <ul>
             <li>
               Managed daily updates to two microsites averaging over 1k visitors per day using
@@ -79,10 +75,10 @@
               Provided front-end work on a Salesforce CMS platform for Manulife Financial intranet
               in 5 languages
             </li>
-          </ul>
+          </ul></li>
         </ul>
         <h3>Biogen</h3>
-        <ul>
+        <ul class="positions">
           <li>
             <h4>Front-End Engineer &amp; Data Science Consultant</h4>
             <ul>
@@ -99,7 +95,7 @@
           </li>
         </ul>
         <h3>J.Jill</h3>
-        <ul>
+        <ul class="positions">
           <li>
             <h4>Associate Front-End Engineer</h4>
             <ul>
@@ -120,7 +116,7 @@
           </li>
         </ul>
         <h3>Mountain Gap Solutions</h3>
-        <ul>
+        <ul class="positions">
           <li>
             <h4>Front-End Developer Intern</h4>
             <ul>
@@ -140,7 +136,7 @@
           </li>
         </ul>
         <h3>i4a</h3>
-        <ul>
+        <ul class="positions">
           <li>
             <h4>Web Developer Undergraduate Co-op</h4>
             <ul>
@@ -159,19 +155,36 @@
           </li>
         </ul>
       </section>
+      <div class="rightcol">
+      <section class="contact">
+        <h2>Contact</h2>
+        <span><ion-icon name="desktop"></ion-icon> <a href="https://patrickbrophy.info" target="_blank" rel="noopener noreferrer">patrickbrophy.info</a></span>
+        <span><ion-icon name="at-outline"></ion-icon> <a href="mailto:pjbrof@gmail.com">pjbrof@gmail.com</a></span>
+        <span><ion-icon name="call"></ion-icon> <a href="tel:14015698623">+1(401)-569-8623</a></span>
+        <span><ion-icon name="logo-twitter"></ion-icon> <a href="https://twitter.com/pjbrof" target="_blank" rel="noopener noreferrer">@pjbrof</a></span>
+        <span><ion-icon name="logo-linkedin"></ion-icon> <a href="https://linkedin.com/in/pjbrof" target="_blank" rel="noopener noreferrer">Linkedin</a></span>
+      </section>
       <section class="edu">
-        <h2>Education, Training &amp; Awards</h2>
+        <h2>Education</h2>
         <h3>
-          University of Dayton (Dayton, OH)</h3>
-          <h4>Bachelor of Science: Electronic &
+          University of Dayton</h3>
+          <h4>B.S. Electronic &amp;
           Computer Engineering Technology</h4>
         </h3>
-        <h3>
-          1st Place - 2017 City of Boston <a href="https://data.boston.gov/showcase/beantown-solar-the-future-never-looked-so-bright">Analyze Boston Open Data Challenge</a>
-        </h3>
-        <h3>
-          Adobe AEM Developer Training – New York, NY
-        </h3>
+      </section>
+      <section class="awards">
+        <h2>Training &amp; Awards</h2>
+        <ul>
+          <li><span>
+            1st Place - 2017 City of Boston <a href="https://data.boston.gov/showcase/beantown-solar-the-future-never-looked-so-bright" target="_blank" rel="noopener noreferrer">Analyze Boston Open Data Challenge</a>
+          </span></li>
+          <li>
+            <span>
+              Adobe AEM Developer Training – New York, NY
+            </span>
+          </li>
+        </ul>
+
       </section>
       <section class="skills">
         <h2>Skills</h2>
@@ -187,9 +200,10 @@
           <li>WCAG 2.1 Compliance</li>
         </ul>
       </section>
+      </div>
     </main>
     <footer>
-      <span>I'm current available for work. Please reach out.</span>
+      <span>Hi there! 👋 &nbsp;I'm current available for work. Please&nbsp;<a href="mailto:pjbrof@gmail.com">reach out.</a>&nbsp;👨‍💻</span>
     </footer>
   </body>
 </html>

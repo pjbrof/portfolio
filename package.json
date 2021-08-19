@@ -12,7 +12,7 @@
     "dev": "webpack serve",
     "test": "jest --watchAll",
     "uitest": "nightwatch",
-    "resume": "http-server ./slim -c10"
+    "resume": "http-server ./resume -c10"
   },
   "repository": "",
   "keywords": [],

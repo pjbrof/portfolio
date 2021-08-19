@@ -10,6 +10,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
@@ -20,7 +22,7 @@ main {
   display: grid;
   padding: 2rem 4rem;
   grid-template-columns: 70% 30%;
-  grid-template-areas: 'exp contact';
+  column-gap: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -32,16 +34,82 @@ main {
 .contact {
   display: flex;
   flex-direction: column;
-  grid-area: contact;
-  padding-left: 2rem;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .experience {
-  grid-area: exp;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.rightcol {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+h2 {
+  text-align: center;
+  padding: 0 0 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .experience h3 {
   padding-left: 1rem;
+  margin: 0;
+}
+
+/* .experience h4 {
+  margin: 1rem;
+} */
+
+.experience ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.experience ul li {
+  position: relative;
+}
+
+.experience ul li:before {
+  content: '\2022';
+  position: absolute;
+  top: 1.7rem;
+  left: -2rem;
+  color: #ddd;
+  font-size: 3rem;
+  line-height: 1rem;
+}
+
+.experience .positions li:after {
+  content: '';
+  position: absolute;
+  top: 3.4rem;
+  left: -1.45rem;
+  height: calc(100% - 2rem);
+  width: 3px;
+  background-color: #ddd;
+}
+
+.experience .positions li:last-child::after,
+.experience .positions ul li::before,
+.experience .positions ul li::after {
+  display: none;
+}
+
+.experience .positions li ul {
+  padding: 0;
+}
+
+.edu {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.skills {
+  grid-column: 2;
+  grid-row: 3;
 }
 
 footer {
@@ -54,12 +122,39 @@ footer {
   background-color: #fff;
 }
 
-footer span {
+footer span,
+footer a {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  padding: 1px 0 0 0;
+}
+
+.blur {
+  color: transparent;
+  text-shadow: 0 0 8px #000;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: block;
+  }
 }
 
 @media print {
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
   a {
     color: #333;
     text-decoration: none;
