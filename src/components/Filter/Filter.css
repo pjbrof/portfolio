@@ -1,0 +1,22 @@
+.filter {
+  margin: 30px 0;
+}
+
+.filter .filter-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-items .filter-item {
+  height: 45px;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.filter-items .filter-item:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}

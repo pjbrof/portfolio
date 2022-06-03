@@ -1,0 +1,44 @@
+.sidebar {
+  height: 100%;
+  padding: 30px;
+  border-right: 1px solid #efefef;
+  background-color: #fff;
+}
+.sidebar .logo {
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 180px;
+  text-align: center;
+  line-height: 300px;
+}
+
+.sidebar .name {
+  font-size: 1.5rem;
+}
+
+.sidebar .resumes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sidebar .contact {
+  margin: 30px 0;
+}
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-links img {
+  height: 40px;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 25%;
+  }
+}

@@ -8,20 +8,20 @@
   width: 75%;
   background-color: #fafafa;
   overflow-y: scroll;
+}
 
-  .button {
-    align-items: flex-start;
-  }
+.details .button {
+  align-items: flex-start;
+}
 
-  h1 {
-    text-align: center;
-  }
+.details h1 {
+  text-align: center;
+}
 
-  h2 {
-    font-weight: bold;
-  }
+.details h2 {
+  font-weight: bold;
+}
 
-  img {
-    margin: 0 auto;
-  }
+.details img {
+  margin: 0 auto;
 }

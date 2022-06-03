@@ -2,44 +2,44 @@
   "cards": [
     {
       "title": "Herd the Sheep",
-      "gif": "./img/hts.png",
+      "gif": "../../img/hts.png",
       "tech": ["javascript", "d3js"],
       "keywords": ["viz"]
     },
     {
       "title": "RunBold Banner App",
-      "gif": "./img/runbold-title.png",
+      "gif": "../../img/runbold-title.png",
       "tech": ["javascript", "php"],
       "keywords": ["app"]
     },
     {
       "title": "JJill Site Redesign",
-      "gif": "./img/jjill_home.png",
+      "gif": "../../img/jjill_home.png",
       "link": "https://www.jjill.com/",
       "tech": ["javascript", "dotnet"],
       "keywords": ["redesign"]
     },
     {
       "title": "John Hancock Site Redesign",
-      "gif": "./img/jhcom.png",
+      "gif": "../../img/jhcom.png",
       "link": "https://www.johnhancock.com",
       "tech": ["react", "javascript", "sass"],
       "keywords": ["redesign"]
     },
     {
       "title": "Musicroamer",
-      "gif": "./img/musicroamer.png",
+      "gif": "../../img/musicroamer.png",
       "link": "http://www.musicroamer.com",
       "tech": ["react", "javascript", "sass", "nodejs-icon", "d3js"],
       "keywords": ["app"]
     },
     {
       "title": "Analyze Boston",
-      "gif": "./img/beantown_solar.png",
+      "gif": "../../img/beantown_solar.png",
       "brief": {
         "title": "Beantown Solar",
         "body": "Lorem ipsum",
-        "image": "./img/beantown_solar.png"
+        "image": "../../img/beantown_solar.png"
       },
       "link": "https://tcb-analytics.shinyapps.io/bostonsolar/",
       "tech": ["r-lang", "python", "javascript"],

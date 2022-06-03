@@ -3,51 +3,38 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
-    hot: true,
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
     port: 8000,
-    stats: 'minimal'
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.(css|scss|sass)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192
-            }
-          }
-        ]
+        test: /\.(mp4|ogg|svg|png|jpg|gif|woff|woff2)$/,
+        loader: 'file-loader',
       },
-      {
-        test: /\.(mp4|ogg|svg)$/,
-        loader: 'file-loader'
-      }
-    ]
+    ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
-    new webpack.HotModuleReplacementPlugin()
-  ]
+  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
 };

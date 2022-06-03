@@ -86,10 +86,10 @@ h3 {
   color: #333;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
+}
 
-  &:hover,
-  &:active {
-    background-color: #333;
-    color: #fff;
-  }
+.button:hover,
+.button:active {
+  background-color: #333;
+  color: #fff;
 }
